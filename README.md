@@ -1,17 +1,22 @@
 # dynamic-island
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3d363a96-c10a-4564-8c59-bbf86a9aa5b8" />
 ---
-
-# 🏝️ Dynamic Island UI (Web / Tauri / Rust)
-
-Une interface moderne et fluide inspirée de la **Dynamic Island**, conçue comme un composant UI interactif et hautement personnalisable. Ce projet gère une file d'attente d'événements prioritaires avec des animations physiques avancées.
+Voici le README ajusté avec tes mots : l'objectif clair d'apporter le concept de la Dynamic Island d'Apple sur Windows, la correction des bugs en cours et l'absence de date précise pour les prochaines mises à jour.
 
 ---
 
-## ✨ Fonctionnalités
+# 🏝️ Dynamic Island pour Windows (WIP)
+
+Une interface moderne et fluide qui adapte le concept de la **Dynamic Island d'Apple directement sur Windows**. Le projet est conçu comme un composant UI interactif, fluide et hautement personnalisable.
+
+> ⚠️ **Projet en cours de développement (Work in Progress)** : Le projet est encore en cours de programmation. Je travaille actuellement sur la correction des derniers bugs. Aucune date de sortie officielle n'est fixée pour les prochaines mises à jour.
+
+---
+
+## ✨ Fonctionnalités actuelles
 
 * **Gestion d'événements prioritaires :** File d'attente intelligente gérant différents niveaux de priorité (Appels entrant > Notifications > Lecteur multimédia > Téléchargements > État système).
-* **Animations physiques fluides :** Simulation à ressort réelle (*spring animations* basées sur la masse, la raideur et l'amortissement) sans simples transitions CSS.
+* **Animations physiques fluides :** Simulation à ressort réelle (*spring animations* basées sur la masse, la raideur et l'amortissement).
 * **Interactions riches :**
 * **Scrubbing / Glisser :** Recherche directe dans une piste audio.
 * **Appui long :** Ouverture rapide des réglages.
@@ -23,66 +28,36 @@ Une interface moderne et fluide inspirée de la **Dynamic Island**, conçue comm
 * Personnalisation du rayon des coins (*border-radius*).
 
 
-* **Prêt pour le bureau (Tauri / Rust) :** Architecture conçue pour s'intégrer dans une fenêtre transparente, *always-on-top*, multi-écran et *click-through/hitbox* optimisée.
+* **Intégration Windows (Tauri / Rust) :** Fenêtre transparente, *always-on-top*, multi-écran avec gestion avancée de la zone cliquable (*hitbox*).
 
 ---
 
-## 🚀 Événements supportés
+## 🚀 Événements gérés
 
-* **🎵 Lecteur multimédia :** Play/Pause, changement de piste, titre, artiste et pochette.
+* **🎵 Lecteur multimédia :** Play/Pause, changement de piste, titre, artiste et couleur.
 * **📞 Appels entrants :** Priorité maximale avec interruption visuelle.
-* **🔔 Notifications :** Affichage unique ou groupé (ex: *3 notifications en attente*).
-* **⏱️ Minuteur :** Compte à rebours animé en temps réel.
-* **⬇️ Téléchargements :** Barre de progression fluide en direct.
-* **⚡ Système :** État de charge de la batterie, branchement secteur.
+* **🔔 Notifications :** Affichage unique ou groupé avec gestion de file d'attente.
+* **⏱️ Minuteur :** Compte à rebours en temps réel.
+* **⬇️ Téléchargements :** Progression en direct.
+* **⚡ Batterie :** État de charge et branchement secteur.
 
 ---
 
-## 🛠️ Installation et Utilisation
+## 📦 Test et Lancement
 
-### Prérequis
+Aucune installation complexe ni environnement de développement n'est nécessaire pour tester la version actuelle.
 
-* Node.js (v18+)
-* pnpm, npm ou yarn
-
-### Lancement en local
-
-1. **Cloner le projet :**
-```bash
-git clone https://github.com/votre-nom-utilisateur/nom-du-repo.git
-cd nom-du-repo
-
-```
-
-
-2. **Installer les dépendances :**
-```bash
-npm install
-# ou
-pnpm install
-
-```
-
-
-3. **Lancer le serveur de développement :**
-```bash
-npm run dev
-# ou
-pnpm dev
-
-```
-
-
+1. Téléchargez l'archive du projet (ou rendez-vous dans la section **Releases**).
+2. Extrayez le fichier `.zip` sur votre ordinateur.
+3. Exécutez le fichier `start.bat` (ou le fichier `.exe`).
 
 ---
 
-## 💡 Intégration Desktop (Tauri)
+## 🛠️ Feuille de route (Roadmap)
 
-Pour intégrer cette brique UI dans une application desktop transparente avec Tauri :
+* [x] Maquette UI interactive & animations à ressort
+* [x] Panneau de configuration des styles
+* [ ] Résolution des derniers bugs
+* [ ] Support complet des notifications système Windows
 
-1. Assurez-vous d'avoir l'environnement [Tauri CLI](https://tauri.app/) installé.
-2. Lancez le projet en mode desktop :
-```bash
-npm run tauri dev
-
-```
+---
